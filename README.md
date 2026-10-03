@@ -15,7 +15,7 @@ An end-to-end Business Intelligence solution designed to analyze credit portfoli
 
 ## Architecture and Technical Implementation
 
-- **Data Layer (PostgreSQL):** Schema design, bucket assignment logic, and transition probability calculations.
+- **Data Layer (PostgreSQL):** Schema design, bucket assignment logic, and transition probability calculations. Refer to [`ifrs9_modeling.sql`](ifrs9_modeling.sql) for the complete schema and ETL scripts.
 - **Reporting & Business Intelligence (Power BI):**
   - Star schema / dimensional modeling utilizing decoupled dimension tables (`dim_risk_bucket`, `dim_next_bucket`) to support cross-bucket transition matrices.
   - Custom DAX measures for dynamic risk metrics (`EAD`, `ECL`, `Coverage Ratio`).
